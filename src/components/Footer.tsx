@@ -1,15 +1,15 @@
-const Footer = () => {
+﻿const Footer = () => {
   return (
     <footer>
       <p>
-        Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge">
-          Frontend Mentor
+        前端测试题 by{" "}
+        <a href="https://github.com/NGA-X/interview/blob/main/">
+          株式会社NGA
         </a>
         .
       </p>
       <p>
-        Coded by <a href="http://cyishere.dev">CY</a>.
+        Coded by <a href="https://github.com/PasserBo/MyTodoList/tree/main">PasserBo</a>.
       </p>
     </footer>
   );

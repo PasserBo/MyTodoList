@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 
 *,
 *::before,
@@ -10,7 +10,7 @@
 
 :root {
   /* Light Theme */
-  --color-very-light-gray: hsl(0, 0%, 98%);
+  --color-very-light-gray: hsl(0, 0%, 94%);
   --color-very-light-grayish-blue: hsl(236, 33%, 92%);
   --color-light-grayish-blue: hsl(233, 11%, 84%);
   --color-dark-grayish-blue: hsl(236, 9%, 61%);
@@ -29,16 +29,17 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 60%;
 }
 
 body,
 input[type="text"],
 button {
   font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 350;
 }
+
 
 .wrapper {
   width: 100%;
@@ -51,7 +52,7 @@ button {
 /* Theme LIGHT */
 .wrapper.light {
   background-color: var(--color-very-light-gray);
-  background-image: url(./images/bg-desktop-light.jpg);
+  background-image: url(./images/bg-desktop-light.png);
   color: var(--color-dark-grayish-blue);
 }
 .wrapper.light input[type="checkbox"],
@@ -62,7 +63,7 @@ button {
 /* Theme DARK */
 .wrapper.dark {
   background-color: var(--color-very-dark-blue);
-  background-image: url(./images/bg-desktop-dark.jpg);
+  background-image: url(./images/bg-desktop-dark.png);
   color: var(--color-dark-dark-grayish-blue);
 }
 
@@ -96,6 +97,11 @@ h1 {
 }
 .wrapper.dark .btn:hover {
   color: var(--color-dark-very-dark-grayish-blue-hover);
+}
+
+.switch-theme-btn {
+    background-color: var(--color-very-light-gray);
+    border-radius: 5px;
 }
 
 /* TodoForm Component */
@@ -258,44 +264,4 @@ a:visited {
   color: var(--color-light-grayish-blue);
 }
 
-/**
- * For MOBILE
- */
-@media screen and (max-width: 600px) {
-  .wrapper {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-  }
-  .wrapper.light {
-    background-image: url(./images/bg-mobile-light.jpg);
-  }
-  .todo-list-section {
-    margin-bottom: 2.4rem;
-  }
-  .todo-filter-control .filter-control-for-desktop {
-    display: none;
-  }
-  .filter-control-for-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 1rem;
-    padding: 2.4rem;
-    box-shadow: -1px 5px 20px 10px rgba(157, 162, 235, 0.3);
-    -webkit-box-shadow: -1px 5px 20px 10px rgba(157, 162, 235, 0.3);
-    -moz-box-shadow: -1px 5px 20px 10px rgba(157, 162, 235, 0.3);
-    margin-bottom: 4.8rem;
-  }
 
-  /* Dark Theme */
-  .wrapper.dark {
-    background-image: url(./images/bg-mobile-dark.jpg);
-  }
-  .wrapper.dark .filter-control-for-mobile {
-    background-color: var(--color-very-dark-desaturated-blue);
-    box-shadow: -1px 5px 20px 10px rgba(37, 39, 60, 0.2);
-    -webkit-box-shadow: -1px 5px 20px 10px rgba(37, 39, 60, 0.2);
-    -moz-box-shadow: -1px 5px 20px 10px rgba(37, 39, 60, 0.2);
-  }
-}
